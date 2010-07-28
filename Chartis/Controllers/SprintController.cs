@@ -25,7 +25,8 @@ namespace Chartis.Controllers
             var stories = sprint.Stories.Select(x =>
                 new StorySummary {
                     Id = x.Id,
-                    Title = x.Name
+                    Title = x.Name,
+                    Notes = x.Notes
                 });
             return View(new SprintDetails
             {

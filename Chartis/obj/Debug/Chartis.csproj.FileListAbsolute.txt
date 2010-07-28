@@ -1,0 +1,7 @@
+C:\Users\andy\Documents\Chartis\Chartis\bin\Chartis.dll
+C:\Users\andy\Documents\Chartis\Chartis\bin\Chartis.pdb
+C:\Users\andy\Documents\Chartis\Chartis\bin\DataAccess.dll
+C:\Users\andy\Documents\Chartis\Chartis\bin\DataAccess.pdb
+C:\Users\andy\Documents\Chartis\Chartis\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\andy\Documents\Chartis\Chartis\obj\Debug\Chartis.dll
+C:\Users\andy\Documents\Chartis\Chartis\obj\Debug\Chartis.pdb

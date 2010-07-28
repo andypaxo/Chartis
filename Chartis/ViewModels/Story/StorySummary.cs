@@ -7,5 +7,6 @@ namespace Chartis.ViewModels.Story
 {
     public class StorySummary : EntityViewModel
     {
+        public string Notes { get; set; }
     }
 }

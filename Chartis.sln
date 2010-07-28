@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chartis", "Chartis\Chartis.csproj", "{8BF88F20-0FA4-487B-B705-42B4053FB7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A8B14E8F-708F-472E-A881-0A5E9877818B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BF88F20-0FA4-487B-B705-42B4053FB7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF88F20-0FA4-487B-B705-42B4053FB7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF88F20-0FA4-487B-B705-42B4053FB7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF88F20-0FA4-487B-B705-42B4053FB7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B14E8F-708F-472E-A881-0A5E9877818B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B14E8F-708F-472E-A881-0A5E9877818B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B14E8F-708F-472E-A881-0A5E9877818B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B14E8F-708F-472E-A881-0A5E9877818B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

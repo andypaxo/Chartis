@@ -25,7 +25,7 @@ namespace Chartis
         {
             AreaRegistration.RegisterAllAreas();
             RegisterRoutes(RouteTable.Routes);
-            Startup.Execute();
+            Startup.ConfigureRepository();
         }
     }
 }

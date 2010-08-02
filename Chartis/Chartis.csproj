@@ -68,24 +68,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\SprintController.cs" />
+    <Compile Include="Controllers\StoryController.cs" />
     <Compile Include="DataAccess\Repository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mess\Startup.cs" />
+    <Compile Include="ViewModels\EntityCreateModel.cs" />
     <Compile Include="ViewModels\EntityViewModel.cs" />
     <Compile Include="ViewModels\Sprint\SprintDetails.cs" />
     <Compile Include="ViewModels\Sprint\SprintSummary.cs" />
+    <Compile Include="ViewModels\Story\StoryCreate.cs" />
     <Compile Include="ViewModels\Story\StorySummary.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Views\Shared\Create.aspx" />
     <Content Include="Views\Shared\Details.aspx" />
     <Content Include="Views\Shared\DisplayTemplates\StorySummary.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\String.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SprintDetails.ascx" />
     <Content Include="Views\Shared\DisplayTemplates\SprintSummary.ascx" />
+    <Content Include="Views\Shared\EditorTemplates\StoryCreate.ascx" />
     <Content Include="Views\Shared\Listing.aspx" />
     <Content Include="Views\Shared\UnorderedList.ascx" />
     <Content Include="Web.config" />

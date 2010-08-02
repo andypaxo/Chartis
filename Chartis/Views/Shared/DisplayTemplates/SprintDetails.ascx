@@ -3,3 +3,4 @@
 <%: Html.DisplayFor(Model => Model.StartDate) %>
 
 <% Html.RenderPartial("UnorderedList", this.Model.Stories); %>
+<%= Html.ActionLink("Add", "Create", "Story", new { sprintId = this.Model.Id }, null) %>

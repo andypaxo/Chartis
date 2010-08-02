@@ -11,9 +11,7 @@
     <div class="page">
 
         <div id="header">
-            <div id="title">
-                <h1>Chartis</h1>
-            </div>
+            <h1>Chartis</h1>
         </div>
 
         <div id="main">

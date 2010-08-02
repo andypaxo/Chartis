@@ -43,12 +43,12 @@ p, ul
 h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
-    color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1
 {
+    color: #532;
     font-size: 2em;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -56,6 +56,7 @@ h1
 h2
 {
     padding: 0 0 10px 0;
+    border-bottom: 1px solid #bbb;
 }
 h3
 {
@@ -93,20 +94,18 @@ page width. Or, you can specify an exact pixel width. */
 {
     position: relative;
     margin-bottom: 0px;
-    color: #000;
+    background-color: #ffc;
     padding: 0;
+    background-image: url('background.png');
 }
 
 #header h1
 {
-    font-weight: bold;
-    padding: 5px 0;
-    margin: 0;
-    color: #fff;
-    border: none;
     line-height: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     font-size: 32px !important;
+    font-weight: normal;
+    padding-left: 20px;
 }
 
 #main

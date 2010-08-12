@@ -38,7 +38,11 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,6 +71,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChartisData.svc.cs">
+      <DependentUpon>ChartisData.svc</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\SprintController.cs" />
     <Compile Include="Controllers\StoryController.cs" />
     <Compile Include="DataAccess\Repository.cs" />
@@ -83,6 +90,7 @@
     <Compile Include="ViewModels\Story\StorySummary.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChartisData.svc" />
     <Content Include="Global.asax" />
     <Content Include="Views\Shared\Create.aspx" />
     <Content Include="Views\Shared\Details.aspx" />

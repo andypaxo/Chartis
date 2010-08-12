@@ -1,5 +1,8 @@
-﻿namespace ChartisDomain
+﻿using System.Data.Services.Common;
+
+namespace ChartisDomain
 {
+    [DataServiceKey("StoryId")]
     public class Story
     {
         public int StoryId { get; set; }

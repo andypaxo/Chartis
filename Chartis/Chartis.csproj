@@ -14,6 +14,7 @@
     <AssemblyName>Chartis</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
+    <SilverlightApplicationList>{F17BAEC2-D1EE-449F-A231-4D280674C51C}|..\ChartisClient\ChartisClient.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,8 +91,12 @@
     <Compile Include="ViewModels\Story\StorySummary.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChartisClientTestPage.aspx" />
+    <Content Include="ChartisClientTestPage.html" />
     <Content Include="ChartisData.svc" />
+    <Content Include="ClientBin\ChartisClient.xap" />
     <Content Include="Global.asax" />
+    <Content Include="Silverlight.js" />
     <Content Include="Views\Shared\Create.aspx" />
     <Content Include="Views\Shared\Details.aspx" />
     <Content Include="Views\Shared\DisplayTemplates\StorySummary.ascx" />
@@ -149,7 +154,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57086</DevelopmentServerPort>
+          <DevelopmentServerPort>50957</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

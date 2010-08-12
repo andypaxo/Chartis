@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chartis", "Chartis\Chartis.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartisDomain", "ChartisDomain\ChartisDomain.csproj", "{EF7A1104-CD13-4132-B81E-32C529EBA88F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartisClient", "ChartisClient\ChartisClient.csproj", "{F17BAEC2-D1EE-449F-A231-4D280674C51C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{EF7A1104-CD13-4132-B81E-32C529EBA88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7A1104-CD13-4132-B81E-32C529EBA88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7A1104-CD13-4132-B81E-32C529EBA88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17BAEC2-D1EE-449F-A231-4D280674C51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17BAEC2-D1EE-449F-A231-4D280674C51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17BAEC2-D1EE-449F-A231-4D280674C51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17BAEC2-D1EE-449F-A231-4D280674C51C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

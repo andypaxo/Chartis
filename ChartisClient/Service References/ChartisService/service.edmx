@@ -1,0 +1,45 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="ChartisDomain" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityType Name="Sprint">
+        <Key>
+          <PropertyRef Name="SprintId" />
+        </Key>
+        <Property Name="SprintId" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Stories" Relationship="ChartisDomain.Sprint_Stories" FromRole="Sprint" ToRole="Stories" />
+        <Property Name="Goal" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="Story">
+        <Key>
+          <PropertyRef Name="StoryId" />
+        </Key>
+        <Property Name="StoryId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="Notes" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Sprint" Relationship="ChartisDomain.Story_Sprint" FromRole="Story" ToRole="Sprint" />
+      </EntityType>
+      <Association Name="Sprint_Stories">
+        <End Role="Sprint" Type="ChartisDomain.Sprint" Multiplicity="*" />
+        <End Role="Stories" Type="ChartisDomain.Story" Multiplicity="*" />
+      </Association>
+      <Association Name="Story_Sprint">
+        <End Role="Story" Type="ChartisDomain.Story" Multiplicity="*" />
+        <End Role="Sprint" Type="ChartisDomain.Sprint" Multiplicity="0..1" />
+      </Association>
+    </Schema>
+    <Schema Namespace="Chartis.DataAccess" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityContainer Name="Repository" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Sprints" EntityType="ChartisDomain.Sprint" />
+        <EntitySet Name="Stories" EntityType="ChartisDomain.Story" />
+        <AssociationSet Name="Sprint_Stories" Association="ChartisDomain.Sprint_Stories">
+          <End Role="Sprint" EntitySet="Sprints" />
+          <End Role="Stories" EntitySet="Stories" />
+        </AssociationSet>
+        <AssociationSet Name="Story_Sprint" Association="ChartisDomain.Story_Sprint">
+          <End Role="Story" EntitySet="Stories" />
+          <End Role="Sprint" EntitySet="Sprints" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

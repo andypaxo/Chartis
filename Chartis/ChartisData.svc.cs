@@ -18,7 +18,6 @@ namespace Chartis
             // TODO: set rules to indicate which entity sets and service operations are visible, updatable, etc.
             // Examples:
             config.SetEntitySetAccessRule("*", EntitySetRights.AllRead);
-            config.SetServiceOperationAccessRule("GetAllSprints", ServiceOperationRights.AllRead);
             config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V2;
         }
 
@@ -34,12 +33,6 @@ namespace Chartis
             c.VaryByHeaders["Accept-Charset"] = true;
             c.VaryByHeaders["Accept-Encoding"] = true;
             c.VaryByParams["*"] = true;
-        }
-
-        [WebGet]
-        public IQueryable<Sprint> GetAllSprints()
-        {
-            return new Repository().Sprints;
         }
     }
 }

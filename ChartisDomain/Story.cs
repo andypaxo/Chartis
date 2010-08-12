@@ -8,6 +8,6 @@ namespace ChartisDomain
         public int StoryId { get; set; }
         public string Name { get; set; }
         public string Notes { get; set; }
-        public virtual Sprint Sprint { get; set; }
+        public Sprint Sprint { get; set; }
     }
 }
